@@ -15,19 +15,6 @@ const AxiosLoggedAutentica = axios.create({
 
 const authStore = useAuthStore; // Obtén la función de estado fuera del interceptor
 
-AxiosLogged.interceptors.request.use(
-  function (config) {
-    const { tokens } = useAuthStore.getState();
-    if (tokens) {
-      config.headers.Authorization = `Bearer ${tokens.access}`;
-    }
-    return config;
-  },
-  function (error) {
-    return Promise.reject(error);
-  }
-);
-
 AxiosLoggedAutentica.interceptors.request.use(
   function (config) {
     const { token } = useAuthStore.getState();
