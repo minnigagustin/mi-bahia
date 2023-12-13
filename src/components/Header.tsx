@@ -75,7 +75,7 @@ interface LinkItemProps {
 
 const LinkItems: Array<LinkItemProps> = [
   { name: "Escritorio", path: "/", icon: IndicadoresIcon },
-  { name: "Notificaciones", path: "/notificaciones", icon: notificacionesIcon },
+  /* { name: "Notificaciones", path: "/notificaciones", icon: notificacionesIcon }, */
   { name: "Mis documentos", path: "/misdocumentos", icon: DocumentosIcon },
   { name: "Calendario", path: "/vencimientos", icon: CalendarioIcon },
   { name: "Licencia de Conducir", path: "/licencia", icon: licenciaIcon },
