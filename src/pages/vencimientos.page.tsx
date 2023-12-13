@@ -51,7 +51,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "@component/store";
 import moment from "moment";
 import { useAuthStore } from "@component/stores/auth";
-import { getDocumentos } from "@component/store/documentosSlice";
 import { getVencimientos } from "@component/store/vencimientosSlice";
 import { getHospital } from "@component/store/hospitalSlice";
 

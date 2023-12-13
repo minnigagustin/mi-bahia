@@ -27,7 +27,9 @@ const localizer = momentLocalizer(moment);
 
 const CalendarDay = (props: any) => {
     const dispatch: AppDispatch = useDispatch();
+    //@ts-ignore
     const { vencimientos } = useSelector((state) => state.vencimientos);
+    //@ts-ignore
     const { turnos } = useSelector((state) => state.hospital);
 
     const [selectedEvent, setSelectedEvent] = useState<any>(null);

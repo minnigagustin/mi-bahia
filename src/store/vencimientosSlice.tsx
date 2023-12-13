@@ -2,10 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 //import { Image, UserResponse } from "../../interfaces/Use-interface";
 //import { AxiosRequest } from "../../../helpers/axiosInstance";
 //import { Profile } from "../../interfaces/data-interface";
-import {
-    axiosLoggedInConfig,
-    axiosLoggedOutConfig,
-} from "../../../utilities/Axios";
+
 import axios from "axios";
 
 
