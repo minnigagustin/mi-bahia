@@ -222,7 +222,7 @@ interface MobileProps extends FlexProps {
   onOpen: () => void;
 }
 const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
-  const { logout, username } = useAuthStore();
+  const { logout } = useAuthStore();
   const { dashboard, isLoading } = useGetDashboard();
 
   const router = useRouter();
