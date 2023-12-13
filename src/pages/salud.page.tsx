@@ -114,7 +114,9 @@ export default function Home() {
 
     const [reclamosEnRango, setReclamosEnRango] = useState([]);
     // Obtener las categorías y subcategorías únicas
+    //@ts-ignore
     const categoriasUnicas = [...new Set(reclamos.map(reclamo => reclamo.categoria))];
+    //@ts-ignore
     const subcategoriasUnicas = [...new Set(reclamos.map(reclamo => reclamo.subcategoria))];
 
     // Estados para los valores seleccionados en los filtros
