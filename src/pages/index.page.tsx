@@ -71,6 +71,8 @@ const CardChart = dynamic(
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const { dashboard, isLoading } = useGetDashboard();
+
   const dispatch: AppDispatch = useDispatch();
   //@ts-ignore
   const user = useSelector((state) => state.profile);
@@ -144,7 +146,7 @@ export default function Home() {
               <VStack spacing={0}>
                 <Box w={"100%"} textAlign={"left"} ml={5}>
                   <Text color={"muni.verde"} textAlign={"left"} fontSize={{ base: '2xl', md: '3xl' }} fontWeight={600}>
-                    <Text fontWeight={600} display="inline" color={"muni.celeste"}>Prueba</Text> | NIVEL 1 <QuestionIcon color={"gray.400"} mb={2} fontSize={24} />
+                    <Text fontWeight={600} display="inline" color={"muni.celeste"}>{dashboard?.last_name} {dashboard?.first_name}</Text> | NIVEL 1 <QuestionIcon color={"gray.400"} mb={2} fontSize={24} />
                   </Text>
                 </Box>
                 <SimpleGrid columns={{ sm: 1, md: 2, xl: 2 }} w={"100%"} spacing="24px" paddingBottom={10}>
