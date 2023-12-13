@@ -12,7 +12,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "downlevelIteration": false,
     "jsx": "preserve",
     "incremental": true,
     "paths": {
